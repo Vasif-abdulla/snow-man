@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    background-color: #a8c9e6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.christmas-tree {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 120px;
+}
+
+.triangle1 {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 100px 50px;
+    border-color: transparent transparent green transparent;
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+    z-index: 1;
+}
+
+.triangle2 {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 200px 100px;
+    border-color: transparent transparent green transparent;
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+}
+
+.triangle3 {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 150px 300px 150px;
+    border-color: transparent transparent green transparent;
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+    z-index: -3;
+}
+
+.box {
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 230px;
+    content: '';
+    width: 40px;
+    height: 60px;
+    background: #964b00;
+    z-index: -4;
+    box-shadow: 0 1px 2px;
+}
+
+.ornament {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.or1 {
+    left: 50%;
+    top: 20%;
+    background: #FF4500;
+    box-shadow: 0 0 15px #FF4500,
+        0 0 30px #FF4500,
+        0 0 45px #FF4500,
+        0 0 60px #FF4500;
+}
+
+.or2 {
+    left: 40%;
+    top: 40%;
+    background: #ff308f;
+    box-shadow: 0 0 15px #ff308f,
+        0 0 30px #ff308f,
+        0 0 45px #ff308f,
+        0 0 60px #ff308f;
+}
+
+.or3 {
+    left: 60%;
+    top: 50%;
+    background: #ff0;
+    box-shadow: 0 0 15px #ff0,
+        0 0 30px #ff0,
+        0 0 45px #ff0,
+        0 0 60px #ff0;
+}
+
+.or4 {
+    left: 34%;
+    top: 62%;
+    background: #0f0;
+    box-shadow: 0 0 15px #0f0,
+        0 0 30px #0f0,
+        0 0 45px #0f0,
+        0 0 60px #0f0;
+}
+
+.or5 {
+    left: 55%;
+    top: 70%;
+    background: #df2fff;
+    box-shadow: 0 0 15px #df2fff,
+        0 0 30px #df2fff,
+        0 0 45px #df2fff,
+        0 0 60px #df2fff;
+}
+
+#snowman {
+    background-repeat: no-repeat;
+    width: 30em;
+    height: 30em;
+    background-image:
+        radial-gradient(ellipse, black 46%, transparent 50%),
+        radial-gradient(ellipse, silver 20%, slategray 35%, DarkSlateGray 45%, black 50%, transparent 50%),
+        linear-gradient(black, black),
+        radial-gradient(ellipse, silver 20%, slategray 35%, DarkSlateGray 45%, black 50%, transparent 50%),
+        radial-gradient(ellipse, black 47%, transparent 50%),
+        linear-gradient(#db2228, #db2228),
+        linear-gradient(40deg, transparent 49.5%, #db2228 50%, #db2228 53.5%, transparent 54%),
+        radial-gradient(circle, #db2228 41%, transparent 50%),
+        radial-gradient(circle, #db2228 41%, transparent 50%),
+        linear-gradient(-130deg, tomato 20%, transparent 21%),
+        radial-gradient(circle, black 41%, transparent 50%),
+        radial-gradient(circle, black 41%, transparent 50%),
+        radial-gradient(circle, black 41%, transparent 50%),
+        radial-gradient(circle, black 41%, transparent 50%),
+        radial-gradient(circle, black 41%, transparent 50%),
+        radial-gradient(circle, Snow 30%, #ededed 49%, transparent 50%),
+        radial-gradient(circle, Snow 30%, #ededed 49%, transparent 50%),
+        radial-gradient(circle, Snow 30%, #ededed 49%, transparent 50%),
+        linear-gradient(30deg, transparent 49%, black 50%, black 53%, transparent 54%),
+        linear-gradient(-30deg, transparent 49%, black 50%, black 53%, transparent 54%),
+        linear-gradient(50deg, transparent 49%, black 50%, black 53%, transparent 54%),
+        linear-gradient(10deg, transparent 49%, black 50%, black 53%, transparent 54%),
+        linear-gradient(120deg, transparent 49%, black 50%, black 53%, transparent 54%),
+        linear-gradient(177deg, transparent 49%, black 50%, black 53%, transparent 54%);
+    background-size:
+        20% 5%, 20% 5%, 14% 12%, 20% 5%, 30% 5%, 16% 3%, 6% 65%, 4.5% 4.5%, 4.5% 4.5%, 5% 10%, 3% 3%, 3% 3%,
+        3% 3%, 3% 3%, 3% 3%, 30% 30%, 40% 40%, 50% 50%, 15% 15%, 15% 15%, 16% 5%, 5% 15%, 14% 5%, 5% 15%;
+    background-position:
+        50% 12%, 50% 12.75%, 50% 16%, 50% 24%, 50% 26%, 50% 44.5%, 55% 45.5%, 42% 44.5%, 57.75% 44.5%, 49% 40%,
+        53% 32%, 47% 32%, 50%, 50% 55%, 50% 60%, 50% 30%, 50% 60%, 50% 110%, 25% 50%, 75% 50%, 20% 46%, 23% 48%,
+        80% 45%, 78% 47%;
+}
